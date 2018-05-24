@@ -1,0 +1,25 @@
+<nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="" 
+                [routerLink]="['/contact-list']">AddressBook Ng4App</a>
+
+            <button [routerLink]="['/add-contact']" class="btn btn-default pull-right" >
+                <span class="glyphicon glyphicon-plus"></span>
+                <span class="glyphicon glyphicon-user"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+<!-- this is the place for all other components, dynamically placed -->
+<!-- <router-outlet></router-outlet> -->
+
+<div class="container" style="margin: 80px 0">
+    <router-outlet></router-outlet>
+</div>
+
+<nav class="navbar navbar-fixed-bottom navbar-default">
+    <div class="container text-center">
+        &copy; 2017 All rights reserved by KVinod Inc.
+    </div>
+</nav>    
